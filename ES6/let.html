@@ -116,5 +116,53 @@
 //        }
 //    }
 
+//    function createFunctions(){
+//        var result = new Array();
+//        for (var i=0; i < 10; i++){
+////            (function (i) {
+////                result[i] = function(){
+////                    return i;
+////                };
+////            })(i)
+//
+//        }
+//        return result;
+//    }
+//    var funcs = createFunctions();
+//    for (var i=0; i < funcs.length; i++){
+//        console.log(funcs[i]());
+//    }
+
+//    function getI () {
+//        var i=1
+//        return i
+//    }
+//    console.log(getI())
+//
+//    function f1(){
+//
+//        var n=999;
+//
+//        var nAdd=function(){n+=1}
+//
+//        function f2(){
+//            alert(n);
+//        }
+//
+//        return f2;
+//
+//    }
+//    var result=f1();
+//    result()
+//    nAdd()
+//    result()
+
+    for (var i = 0; i < 5; i++) {
+        setTimeout(function(j) {
+            console.log(new Date, j);
+        }, 1000, i);
+    }
+
+    console.log(new Date, i);
 </script>
 </html>
