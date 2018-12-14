@@ -85,6 +85,90 @@
 //    console.log(function (a,b,...c) {
 //    }.length)
 
+//    var f = v => {
+//        console.log(v)
+//    }
+//    f(1)
+
+//    var f = v => v
+//    console.log(f(100))
+
+
+
+//    var f = () => {console.log(11111)}
+//    f()
+
+//    var f = (num1, num2) => (num1+num2)*num1
+//    console.log(f(2,3))
+
+//    var f = (num1,num2) => {console.log(num1+num2)}
+//    f(10,200)
+
+//    var f = (num1,num2) => ({id:num1,num:num2})
+//    console.log(f(11,1))
+
+//    var f = () => {a:1}
+//    console.log(f())
+
+//    var f = () => console.log('aaa')
+//    f()
+
+//    var f = ({a,b}) => a+","+b
+//    console.log(f({a:199,b:1}))
+
+
+//    [1,2,3].map(item => console.log(item*2))
+
+//    [1,2,3].map(function (t) { console.log(t*2) })
+
+//    var aaa=[1,2,16,3,9].sort(function (a,b) {
+//        return a-b
+//    })
+//    console.log(aaa)
+
+
+//    var bbb=[12,42,35,15,77,0].sort((a,b) => a-b)
+//    console.log(bbb)
+
+//    var f = (...vals) => {
+//        for (var l of vals) {
+//            console.log(l)
+//        }
+//    }
+//    f(1,2,44,21,0)
+
+//    var f = (q,...vals) => [q,vals]
+//    console.log(f(1,1,2,3,1))
+
+//    function foo() {
+//        this.id=0
+//        setTimeout(() => {
+//            console.log('id:', this.id);
+//    }, 100);
+//    }
+//    var id=11
+//    foo()
+
+//    var ohj= {
+//        name: 1,
+//        get: function () {
+//            name =1000
+//            return () => this.name
+//        }
+//    }
+//    var name=19
+//    console.log(ohj.get().call(1111))
+
+    var obj={
+        name:1,
+        ff: function () {
+            console.log(name)
+        }
+    }
+    var name=111
+    console.log(obj.name)
+
+
 //    function aa(x=1,y,z) {
 //        console.log([x,y,z])
 //    }
