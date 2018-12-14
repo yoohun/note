@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css例子 各种图标</title>
+    <style>
+        .main{
+            width: 800px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .item{
+            width: 180px;
+            height: 180px;
+            border-radius: 8px;
+            box-shadow: 0 5px 5px #b1b1b1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .div1{
+            width: 80px;
+            height: 80px;
+            background: black;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top: -40px;
+            margin-left: -40px;
+            transform: rotate(45deg)
+        }
+        .div1 div{
+            width: 10px;
+            height: 10px;
+            background: #ffffff;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top: -5px;
+            margin-left: -5px;
+        }
+        .div2{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: black;
+            position: relative;
+        }
+        .div2::before,.div2::after{
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: -4px;
+            top:50%;
+            margin-top: -20px;
+            border-radius: 50%;
+            background: #ffffff;
+        }
+        .div2::after{
+            left: -4px;
+        }
+        .div3{
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        .div3 span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border: 8px solid black;
+            border-radius: 50%;
+            box-shadow: 0 0 1px 2px #ffffff;
+        }
+        .div3 span:nth-child(1){
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            left: 35px;
+        }
+        .div3 span:nth-child(2){
+            position: absolute;
+            top:50%;
+            margin-top: -30px;
+            right: 35px;
+        }
+        .div6{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #000000;
+            position: relative;
+        }
+        .div6::before{
+            display: block;
+            content: '';
+            width: 60px;
+            height: 60px;
+            background: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            margin-left: -30px;
+            top:-4px;
+        }
+        .div6::after{
+            display: block;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #000000;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top:-5px;
+            margin-left: -10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item">
+            <div class=" div1">
+                <div></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="div2"></div>
+        </div>
+        <div class="item">
+            <div class="div3">
+                <span>
+                </span>
+                <span></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="div6"></div>
+        </div>
+    </div>
+</body>
+</html>
