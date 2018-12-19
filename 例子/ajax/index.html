@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery的ajaxdemo</title>
+    <style>
+        .main{
+            width: 100%;
+            display: flex;
+        }
+        .main>div{
+            width: 33%;
+        }
+        .content{
+            display:flex ;
+            flex-wrap: wrap;
+        }
+        .content h4{
+            display: block;
+            width: 100%;
+        }
+        .content ul{
+            padding: 0;
+            margin-bottom: 20px;
+            list-style: none;
+            width: 100%;
+        }
+    </style>
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div>
+        <h3>get方法获取数据</h3>
+        <div>
+            <button id="getMethod">get方法获取数据</button>
+        </div>
+        <div class="content"></div>
+    </div>
+    <div>
+        <h3>post方法获取数据</h3>
+        <div>
+            <button id="postMethod">post方法获取数据</button>
+        </div>
+        <div class="content"></div>
+    </div>
+    <div>
+        <h3>delete方法获取数据</h3>
+        <div>
+            <button id="deleteMethod">delete方法获取数据</button>
+        </div>
+        <div class="content"></div>
+    </div>
+</div>
+</body>
+<script>
+    var html=""
+    $("#getMethod").click(function () {
+        html=""
+
+//        $.ajax()方法获取数据
+//        $.ajax({
+//            url: "http://123.56.220.217:3031/list",
+//            type: "GET",
+//            data: {
+//                name: "qingxia"
+//            },
+//            success: function (data) {
+//                console.log(data)
+//                if(data.msg==="success" && data.code===200) {
+//                    html+="<h4>"+data.query.name+"</h4>"
+//                    for(var i=0;i<data.data.length;i++){
+//                        html+="<ul><li>ID:"+data.data[i].Batch_ID+"</li>"
+//                        html+="<li>name:"+data.data[i].couponname+"</li>"
+//                        html+="<li>Date:"+data.data[i].Expire_Date+"</li>"
+//                        html+="<li>coupontype:"+data.data[i].Expire_Date+"</li></ul>"
+//                    }
+//                    $(".content")[0].innerHTML=html;
+//                }
+//            }
+//        })
+
+
+//        $.get()方法获取数据
+        var getData={name: "qingxia"}
+        $.get(
+            "http://123.56.220.217:3031/list",
+            getData,
+            function (data) {
+                console.log(data)
+                if(data.msg==="success" && data.code===200) {
+                    html+="<h4>"+data.query.name+"</h4>"
+                    for(var i=0;i<data.data.length;i++){
+                        html+="<ul><li>ID:"+data.data[i].Batch_ID+"</li>"
+                        html+="<li>name:"+data.data[i].couponname+"</li>"
+                        html+="<li>Date:"+data.data[i].Expire_Date+"</li>"
+                        html+="<li>coupontype:"+data.data[i].Expire_Date+"</li></ul>"
+                    }
+                    $(".content")[0].innerHTML=html;
+                }
+            }
+        )
+    })
+
+
+    $("#postMethod").click(function () {
+        html=""
+
+//        $.ajax()方法获取数据
+        $.ajax({
+            url: "http://123.56.220.217:3030/submi",
+            type: "POST",
+            dataType: "json",
+            contentType:"application/x-www-form-urlencoded",
+            data:{
+                name: "zqingxia",
+                city: "guangdong"
+            },
+            dataFilter: function (data, type) {
+                // 对Ajax返回的原始数据进行预处理
+                console.log(data) //返回的是字符串，要是要转换成json文件的话，就用JSON.parse(data)
+                return data  // 返回处理后的数据
+            },
+            success: function (data) {
+                console.log(data)
+                if(data.msg==="success" && data.code===200) {
+                    for(var i in data.postData){
+                        html+="<ul><li>"+i+":"+data.postData[i]+"</li>"
+                        html+="</ul>"
+                    }
+                    $(".content")[1].innerHTML=html;
+                }
+            },
+            context: document.context,//让回调函数内this指向这个对象 显示的是body
+            complete: function (XMLHttpRequest, textStatus) {
+                console.log(this); // 调用本次AJAX请求时传递的options参数
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {//有错误的话才会返回数据,就算是url写错了也会有返回信息
+                console.log(textStatus)
+                // 通常 textStatus 和 errorThrown 之中
+                // 只有一个会包含信息
+                console.log(this); // 调用本次AJAX请求时传递的options参数
+            }
+        })
+
+
+////        $.post()方法获取数据
+//        var postData={name: "zqingxia",city: "guangdong"}
+//        $.post(
+//            "http://123.56.220.217:3030/submit",
+//            postData,
+//            function (data) {
+//                console.log(data)
+//                if(data.msg==="success" && data.code===200) {
+//                    for(var i in data.postData){
+//                        html+="<ul><li>"+i+":"+data.postData[i]+"</li>"
+//                        html+="</ul>"
+//                    }
+//                    $(".content")[1].innerHTML=html;
+//                }
+//            }
+//        )
+    })
+
+    $("#deleteMethod").click(function () {
+        html=""
+        $.ajax({
+            url: "http://123.56.220.217:3031/delete/55022299",
+            type: "DELETE",
+            data: {
+              name: "zqx"
+            },
+            success: function (data) {
+                if(data.msg==="success" && data.code===200) {
+                    for(var i in data.data){
+                        html+="<ul><li>"+i+":"+data.data[i]+"</li>"
+                        html+="</ul>"
+                    }
+                    $(".content")[2].innerHTML=html;
+                }
+            }
+        })
+    })
+
+
+
+
+
+    ////        ifModified   仅在服务器数据改变时获取新数据。 和浏览器的强制缓存有关系
+////        jsonpCallback  你也可以在想让浏览器缓存 GET 请求的时候，指定这个回调函数名。 是不是意思是说要让浏览器直接读取缓存的数据的时候，就指定回调函数名？
+////        password,username  用于响应 HTTP 访问认证请求的密码,用于响应 HTTP 访问认证请求的用户名。如果服务器需要HTTP认证，可以使用用户名和密码可以通过username和password选项来设置
+////        http认证需要细看
+//
+//
+//    })
+</script>
+</html>

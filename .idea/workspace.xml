@@ -17,7 +17,7 @@
       <file leaf-file-name="example.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/例子/example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="475">
               <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="array.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/array.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
+            <state relative-caret-position="1919">
               <caret line="101" column="42" lean-forward="false" selection-start-line="101" selection-start-column="42" selection-end-line="103" selection-end-column="43" />
               <folding />
             </state>
@@ -40,7 +40,7 @@
       <file leaf-file-name="object.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/object.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="456">
               <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding />
             </state>
@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/ES6/promise.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="243" column="37" lean-forward="true" selection-start-line="243" selection-start-column="37" selection-end-line="243" selection-end-column="37" />
+              <caret line="243" column="37" lean-forward="false" selection-start-line="243" selection-start-column="37" selection-end-line="243" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -119,7 +119,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,23 +129,19 @@
             <path>
               <item name="note" type="b2602c69:ProjectViewProjectNode" />
               <item name="note" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="note" type="b2602c69:ProjectViewProjectNode" />
-              <item name="note" type="462c0819:PsiDirectoryNode" />
               <item name="例子" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ajax" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node-web" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -191,25 +186,27 @@
       <workItem from="1545030895038" duration="104000" />
       <workItem from="1545057310515" duration="2222000" />
       <workItem from="1545094078274" duration="11909000" />
+      <workItem from="1545190025561" duration="600000" />
+      <workItem from="1545203038206" duration="42000" />
+      <workItem from="1545203203971" duration="266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96465000" />
+    <option name="totallyTimeSpent" value="97373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14568081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14508928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6687697" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -525,17 +522,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../pure-css3-black-icon/pure-css3-black-icon/css/style.css" />
     <entry file="file://$PROJECT_DIR$/../pure-css3-black-icon/pure-css3-black-icon/index.html" />
-    <entry file="file://$PROJECT_DIR$/data/test2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test2.json" />
     <entry file="file://$PROJECT_DIR$/ES6/array.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
+        <state relative-caret-position="1919">
           <caret line="101" column="42" lean-forward="false" selection-start-line="101" selection-start-column="42" selection-end-line="103" selection-end-column="43" />
           <folding />
         </state>
@@ -543,7 +533,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/例子/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="475">
           <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -554,7 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/object.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="456">
           <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding />
         </state>
@@ -563,7 +553,7 @@
     <entry file="file://$PROJECT_DIR$/ES6/promise.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="243" column="37" lean-forward="true" selection-start-line="243" selection-start-column="37" selection-end-line="243" selection-end-column="37" />
+          <caret line="243" column="37" lean-forward="false" selection-start-line="243" selection-start-column="37" selection-end-line="243" selection-end-column="37" />
           <folding />
         </state>
       </provider>
