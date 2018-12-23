@@ -114,23 +114,46 @@
 //})
 
 
+//const pro=new Promise((resolve,reject)=>{
+//    resolve()
+//})
+//pro.then(()=>{
+//    console.log(1)
+//})
+//const pro2=new Promise((resolve,reject)=>{
+//    reject()
+//})
+//pro2.then(null,reject=>{
+//    console.log(2)
+//})
+//
+//const pros=Promise.all([pro,pro2])
+//pros.then(resolve=>{
+//    console.log('resolve')
+//},reject=>{
+//    console.log('reject')
+//})
+
+
 //    const pro=new Promise((resolve,reject)=>{
 //        resolve()
 //    })
 //    pro.then(()=>{
-//        console.log(this)
+//        console.log(1)
 //    })
 //    const pro2=new Promise((resolve,reject)=>{
 //        reject()
 //    })
-//    pro2.then(()=>{
+//    pro2.then(null,reject=>{
 //        console.log(2)
 //    })
 //
-//    const pros=Promise.all([pro,pro2])
-//    pros.then((resolve,reject)=>{
-//        console.log(333)
-//    })
+//    const pros=Promise.race([pro,pro2])
+//    pros.then(resolve=>{
+//        console.log('resolve')
+//    },reject=>{
+//    console.log('reject')
+//})
 
 
 //    const pro1=new Promise((resolve,reject)=>{
@@ -164,16 +187,22 @@
 //    pro.then(console.log()).catch(err=>{console.log(err)})
 
 
-//    var thenable={
-//        then: function(resolve, reject) {
-//            resolve(42);
-//        }
-//    }
+    var thenable={
+        then: function(resolve, reject) {
+            resolve(42);
+        }
+    }
 //    var p1=Promise.resolve(thenable);
 //    p1.then(value=>{
 //        console.log(value)
 //    })
 
+//    var p2=Promise.resolve('thenabl');
+//    p2.then(()=>{
+//        console.log(112)
+//    },()=>{
+//        console.log(22)
+//})
 
 //    var a=Promise.resolve('sehun')
 //    a.then(val=>{
@@ -207,7 +236,20 @@
 //    const p2=new Promise((resolve,reject) => reject('出错'))
 //    p2.then(null, s=>{console.log(s)})
 
-
+//const promise = new Promise(function (resolve, reject) {
+//    setTimeout(() => {
+//        reject('err')
+//}, 1000)
+//})
+//
+//promise.then(
+//    res => console.log('s1'),
+//    err => console.log('e1')
+//).then(
+//    res => console.log('s2')
+//).catch(
+//    err => console.log('e2')
+//)
 
 
 //const thenable = {
@@ -249,6 +291,97 @@
 //            image.src=path
 //        })
 //    }
+
+//    var f=function () {return  console.log(111)}
+//    Promise.resolve().then(console.log(f))
+
+//    const f = () => console.log('now');
+//    (async () => f())();
+//    console.log('next');
+
+//const f = () => console.log('now');
+//(
+//    () => new Promise(
+//    resolve => resolve(f())
+//)
+//)();
+//console.log('next');
+//
+//const fa= () => console.log('now');
+////const fa= () => console.log('now');
+//(
+//    ()=>new Promise(
+//        resolve=>resolve(fa())
+//    )
+//)()
+//    console.log('next')
+
+//    var f=function () {
+//        console.log('now')
+//    }
+//    Promise.try(f)
+//    console.log('next')
+//const f = () => console.log('now');
+//Promise.try(f);
+//console.log('next');
+
+
+//        var p3=Promise.reject('err')
+////var p3=new Promise((resolve,reject)=>{
+////        reject()
+////})
+//        p3.then(()=>{
+//            console.log(111)
+//        },value=>{
+//            console.log(value)
+//        })
+
+function getDataPromise(url) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        let res = {
+            url: url,
+            data: {}
+        }
+        resolve(res)
+    }, 1000)
+})
+}
+
+
+//function * getData() {
+//    let res1 = yield getDataPromise('/data/text2.json');
+//    console.log(res1);
+//    console.log(1);
+//}
+////getData()
+//
+//
+//function run(gen) {
+//    let fn = gen()
+//    console.log(fn.res1)
+//
+//
+////    function next(data) {
+////        let res = fn.next(data)
+////        if (res.done) return res.value
+////        res.value.then((info) => {
+////            next(info)
+////        })
+////    }
+////    next()
+//}
+//
+//run(getData)
+
+    var p =Promise.all('ddd')
+    p.then(()=>{
+        console.log(1)
+    },()=>{
+        console.log(2)
+})
+
+
 
 </script>
 </html>

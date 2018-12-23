@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generator函数</title>
+</head>
+<body>
+
+</body>
+<script type="application/ecmascript">
+//    function* aaa() {
+//        yield 'hello'
+//        yield 'sehun'
+//        return 'Oh'
+//    }
+//    var a=aaa()
+//    console.log(a.next())
+//    console.log(a.next().value)
+//    console.log(a.next().value)
+//    console.log(a.next().value)
+
+
+
+
+//function* aaa() {
+//    console.log(111)
+//}
+//var a=aaa()
+//setTimeout(function () {
+//    a.next()
+//},1000)
+
+
+//    function* aaa() {
+//        yield 1+1
+//        yield 2+2
+//        return 3+3
+//    }
+//    var a = aaa()
+//    console.log(a.next())
+
+//(function () {
+
+//        yield 1+1
+//        return 'end'
+//    })()
+
+
+
+//    function* aaa() {
+//        function foo(x,y) {
+//            console.log(x)
+//            console.log(y)
+//        }
+//        foo(yield 'a', yield 'b');
+//    }
+//
+//    var a=aaa()
+//    console.log(a.next())
+//    console.log(a.next())
+
+
+//function* f() {
+//    for(var i = 0; true; i++) {
+//        var reset = yield i;
+//        console.log(reset)
+//        if(reset) { i = -1; }
+//    }
+//}
+//
+//var g = f();
+//
+//g.next() // { value: 0, done: false }
+//g.next() // { value: 1, done: false }
+//g.next(true) // { value: 0, done: false }
+
+
+//    function* aaa() {
+//        yield 1
+//        yield 2
+//        yield 3
+//        yield 4
+//        yield 5
+//        return 6
+//    }
+//
+//    for( var i of aaa()) {
+//        console.log(i)
+//    }
+
+
+//    function* fibonacci() {
+//        let [prev, curr] = [0, 1];
+//        for (;;) {
+//            yield curr;
+//            [prev, curr] = [curr, prev + curr];
+//        }
+//    }
+//
+//    for (let n of fibonacci()) {
+//        if (n > 1000) break;
+//        console.log(n);
+//    }
+
+
+//    function* aaa() {
+//        yield 1
+//        yield 3
+//        return 5
+//    }
+//    console.log([...aaa()])
+//    console.log(Array.from(aaa()))
+//    var [x,y]=aaa()
+//    console.log(x)
+//    console.log(y)
+
+
+//    function* aaa() {
+//        try {
+//            yield
+//        } catch (e) {
+//            console.log('neirueerr',e)
+//        }
+//    }
+//
+//    var a= aaa()
+//    a.next()
+//    try {
+//        a.throw('a')
+//        a.throw('b')
+//    } catch (e) {
+//        console.log('外部',e)
+//    }
+//
+//
+//var g = function* () {
+//    try {
+//        yield;
+//    } catch (e) {
+//        console.log('内部捕获', e);
+//    }
+//};
+//
+//var i = g();
+//i.next();
+//
+//try {
+//    i.throw('a');
+//    i.throw('b');
+//} catch (e) {
+//    console.log('外部捕获', e);
+//}
+
+
+//    function* aaa() {
+//        try{
+//            yield
+//        } catch (e) {
+//            console.log(e)
+//        }
+//    }
+//
+//    var i=aaa()
+//    i.next()
+//    i.throw(new Error('错误'))
+
+
+//    function* aaa() {
+//        try{
+//            yield
+//        } catch (e) {
+//            console.log(e)
+//        }
+//    }
+//    var a=aaa()
+//    a.next()
+////    a.throw(new Error('a'))
+//
+//    try{
+//        throw (new Error('外面'))
+//    } catch (e) {
+//        console.log(e)
+//    }
+
+//    function* aaa() {
+//        yield 1
+//        throw (new Error('里面'))
+//    }
+//    var a=aaa()
+//    a.next()
+//    try{
+//        throw new Error('外面')
+//        throw new Error('外面2')
+//    } catch(e) {
+//        console.log(e)
+//    }
+
+
+//    function* aaa() {
+//        yield 1
+//        throw (new Error('里面'))
+//    }
+//    var a=aaa()
+//    a.next()
+//    throw new Error('外面')
+
+
+//    function* aaa() {
+//        try{
+//            yield
+//        } catch(e) {
+//            console.log(e)
+//        }
+//    }
+//    var a=aaa()
+//    a.next()
+//    a.throw(new Error('里面'))
+
+//    function* aaa() {
+//        try{
+//            yield
+//        } catch(e) {
+//            console.log(e)
+//        }
+//    }
+//    var a=aaa()
+//    a.throw(new Error('里面'))
+//    a.next()
+
+
+//    function* aaa() {
+//        try{
+//            yield
+//        } catch(e) {
+//            console.log(e)
+//        }
+//    }
+//    var a=aaa()
+//
+//    try {
+//        a.throw(new Error('里面'))
+//    } catch (e) {
+//        console.log(e)
+//    }
+
+
+//    function* aaa() {
+//        try {
+//            yield console.log('aa')
+//        } catch (e) {
+//            console.log(e)
+//        }
+//        yield console.log('b')
+//        return 3
+//    }
+//    var a=aaa()
+//    a.next()
+//    a.throw(new Error('a'))
+
+//    function* aaa() {
+//        yield console.log(1)
+//        yield console.log(2)
+//    }
+//    var a=aaa()
+//    a.next()
+//    try {
+//        throw new Error('aaaa')
+//    } catch (e) {
+//        a.next()
+//    }
+
+//function* foo() {
+//    var x = yield 3;
+//    var y = x.toUpperCase();
+//    yield y;
+//}
+//
+//var it = foo();
+//
+//it.next(); // { value:3, done:false }
+//
+//try {
+//    it.next(42);
+//} catch (err) {
+//    console.log(err);
+//}
+
+
+//function* aaa() {
+//    var x = yield 3;
+//    var y = x.toUpperCase();
+//    yield y
+//}
+//var a=aaa()
+//a.next()
+//    try{
+//        a.next(2)
+//} catch (e) {
+//    console.log(e)
+//}
+
+//    function* aaa() {
+//        yield 1
+//        throw new Error('err')
+//        yield 4
+//    }
+//    var a=aaa()
+//    console.log(a.next())
+//    console.log(a.next())
+//    console.log(a.next())
+
+
+//    function* aaa() {
+//        yield 1
+//        yield 2
+//        yield 4
+//    }
+//    var a=aaa()
+//    console.log(a.next())
+////    console.log(a.return())
+//    console.log(a.return(12))
+//    console.log(a.next())
+
+
+//    function * aaa() {
+//        yield 1
+//        try{
+//            yield 2
+//            yield 3
+//        } finally {
+//            yield 10
+//            yield 13
+//        }
+//    }
+//    var a=aaa()
+//    console.log(a.next())
+//    console.log(a.next())
+//    console.log(a.return(111))
+//    console.log(a.next())
+//    console.log(a.next())
+//    console.log(a.next())
+
+
+//    function * aaa(y) {
+//        var x = yield y+2
+//        yield x+5
+//    }
+//    var a=aaa(10)
+//    console.log(a.next())
+//    console.log(a.next(10))
+//    console.log(a.next())
+
+//const g = function* (x, y) {
+//    let result = yield x + y;
+//    return result;
+//};
+//
+//const gen = g(1, 2);
+//console.log(gen.next()) // Object {value: 3, done: false}
+//console.log(gen.throw(new Error('eee')))
+
+//    function * aaa() {
+//        yield 1
+//        yield 3
+//        yield 10
+//    }
+//    function * a() {
+//        yield 10
+//        yield* aaa()
+//        yield 100
+//    }
+//
+//    for (var i of a()){
+//        console.log(i)
+//    }
+
+//    function * aaa() {
+//        yield 1
+//        yield 2
+//    }
+//    function * sss() {
+//        yield 4
+//        yield* aaa()
+//        return 22222
+//        yield 10
+//    }
+//    for(var i of sss()) {
+//        console.log(i)
+//    }
+
+//    function * aaa() {
+//        yield 'q'
+//        yield 'v'
+//    }
+//    function * s() {
+//        yield 'l'
+//        yield aaa()
+//    }
+//    function * d() {
+//        yield 's'
+//        yield* aaa()
+//    }
+//    console.log(d().next().value)
+//    console.log(d().next().value)
+//    console.log(d().next().value)
+//    console.log(d().next().value)
+//    console.log(s().next().value)
+//    console.log(s().next().value)
+//    console.log(s().next().value)
+//    console.log(s().next().value)
+
+
+//function* inner() {
+//    yield 'hello!';
+//}
+
+
+
+//function * aaa() {
+//    yield 'q'
+//    yield 'v'
+//}
+//function * s() {
+//    yield 'l'
+//    yield aaa()
+//}
+//var ss=s()
+//console.log(ss.next().value) // "open"
+//console.log(ss.next().value) // 返回一个遍历器对象
+//console.log(ss.next().value)
+//function * d() {
+//    yield 's'
+//    yield* aaa()
+//}
+//var dd=d()
+//console.log(dd.next().value )// "open"
+//console.log(dd.next().value) // "hello!"
+//console.log(dd.next().value)
+
+
+
+    function * aaa() {
+        yield 1
+        return 3
+    }
+    function * sss() {
+        yield 8
+        yield 10
+//        var c = yield* aaa()
+        console.log(yield* aaa())
+        yield 1111
+    }
+    var s=sss()
+//    for(var q of sss()){
+//        console.log(q)
+//    }
+console.log([...s])
+
+//    function* aaa() {
+//        yield [1,2,3,4]
+//    }
+////    var a=aaa()
+////    console.log(a.next())
+//    for (var a of aaa()) {
+//        console.log(a)
+//    }
+
+//    function * aaa() {
+//        yield 'sehun'
+//        yield* 'ohsehun'
+//    }
+//    for(var a of aaa()){
+//        console.log(a)
+//    }
+
+
+
+</script>
+</html>
