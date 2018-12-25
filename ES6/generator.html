@@ -439,22 +439,22 @@
 
 
 
-    function * aaa() {
-        yield 1
-        return 3
-    }
-    function * sss() {
-        yield 8
-        yield 10
-//        var c = yield* aaa()
-        console.log(yield* aaa())
-        yield 1111
-    }
-    var s=sss()
-//    for(var q of sss()){
-//        console.log(q)
+//    function * aaa() {
+//        yield 1
+//        return 3
 //    }
-console.log([...s])
+//    function * sss() {
+//        yield 8
+//        yield 10
+////        var c = yield* aaa()
+//        console.log(yield* aaa())
+//        yield 1111
+//    }
+//    var s=sss()
+////    for(var q of sss()){
+////        console.log(q)
+////    }
+//console.log([...s])
 
 //    function* aaa() {
 //        yield [1,2,3,4]
@@ -472,6 +472,114 @@ console.log([...s])
 //    for(var a of aaa()){
 //        console.log(a)
 //    }
+
+
+
+
+
+//    function * aaa() {
+//        this.aaaaa=4
+//        yield 1
+//        return 3
+//    }
+//    var obj={}
+//    var p=aaa.call(obj)
+//    console.log(p.next())
+//    console.log(p.next())
+//    console.log(p.next())
+//    console.log(obj.aaaaa)
+//
+//function* F() {
+//    this.a = 1;
+//    yield this.b = 2;
+//    yield this.c = 3;
+//}
+//var obj = {};
+//var f = F.call(obj);
+//console.log(f.next())
+//console.log(f.next())
+//console.log(f.next())
+//console.log(obj.a)
+
+
+//    function * aaa() {
+//        yield 1
+//        this.aaa=1
+//        yield 5
+//        return 10
+//    }
+//
+//    var f=aaa.call(aaa.prototype)
+//
+//    console.log(f.next())
+//    console.log(f.next())
+//    console.log(f.next())
+//    console.log(f.next())
+//
+//    console.log(f.aaa)
+
+
+//    function * aaa() {
+//        yield 1
+//        this.aaa=1
+//        yield 5
+//        return 10
+//    }
+//
+//    function f() {
+//        return aaa.call(aaa.prototype)
+//    }
+//
+//    var sss=new f()
+//    console.log(sss.next())
+//    console.log(sss.next())
+//    console.log(sss.next())
+//    console.log(sss.next())
+//
+//    console.log(sss.aaa)
+
+
+//    var tic=true
+//    function aaa() {
+//        if(tic) {
+//            console.log(tic)
+//        } else {
+//            console.log(tic)
+//        }
+//        tic=!tic
+//    }
+//    aaa()
+//    console.log(tic)
+//    aaa()
+//    console.log(tic)
+
+//    var tic=true
+//    function * aaa() {
+//        while (true) {
+//            console.log("tiv")
+//            yield
+//            console.log("toc")
+//            yield
+//        }
+//
+//    }
+//
+//    var a =aaa()
+//    a.next()
+//    a.next()
+//    a.next()
+//    a.next()
+
+
+
+//    function trunk(x) {
+//        return x+5
+//    }
+//    var trun=function (s) {
+//        return s*2
+//    }
+//    console.log(trun(15))
+
 
 
 

@@ -25,10 +25,6 @@ getbtn.onclick=function () {
 var postbtn=document.getElementById("postMethod")
 postbtn.onclick=function () {
     html=''
-    var postData={
-        "name": "qingxia",
-        "city": "guangzhou"
-    }
     var xml=new XMLHttpRequest();
     xml.open('POST','http://123.56.220.217:3031/submit');
     xml.setRequestHeader("content-type","application/x-www-form-urlencoded");
