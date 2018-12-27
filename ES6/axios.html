@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <button id="btn">点击</button>
+</body>
+<script>
+    var axiosConfig={
+        baseURL: 'http://123.56.220.217:3031/',
+        method: "post",
+        timeout: 900000,
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded', // application/json application/x-www-form-urlencoded
+        },
+        // 返回数据类型
+        responseType: 'json',
+        transformResponse: [function (data) {
+            // 这里提前处理返回的数据
+           console.log(data) //打印出代码
+            return data
+        }]
+    }
+
+
+
+//    axios.get('http://123.56.220.217:3031/list').catch(err=>{
+//        console.log(err)
+//    })
+
+    const CancelToken = axios.CancelToken;
+    const source = CancelToken.source();
+
+    axios.get('http://123.56.220.217:3031/list', {
+        cancelToken: source.token
+    }).then(res=>{
+        console.log(res)
+    })
+
+    // cancel the request (the message parameter is optional)
+    source.cancel('meiyouaaa');
+
+
+//    axios('submit',axiosConfig)  //记得有method有data
+
+
+
+//    var data={
+//        name: "请求sehun"
+//    }
+//    axios.post("http://123.56.220.217:3031/submit",data,axiosConfig) //post方法，但是axiosconfig里设置的是get方法，所以不能成功，必须把配置项修改成post方法才行并且必须要把data写在括号里
+
+//    var instance=axios.create(axiosConfig)
+//    instance.interceptors.request.use(config=>{
+//        console.log(config)
+//    return config
+//    },err=>{
+//        console.log(err)
+//        Promise.reject(error)
+//    })
+
+//    instance#post("submit",axiosConfig)
+
+//    instance({
+//        method: "get",
+//        url:"list"
+//    }).then(res=>{
+//        console.log(res)
+//    })
+
+//    instance#get('list')
+
+//
+//    instance({
+//        method: "post",
+//        url:"submit",
+//        data: {
+//            name: 'sehun'
+//        }
+//    }).then(res=>{
+//        console.log(res)
+//    })
+
+
+//    axios("list",axiosConfig).then( res=>{
+//        console.log(res)
+//    },err => {
+//        console.log(err)
+//    })
+
+//    axios("submit",axiosConfig).then( res=>{
+//        console.log(res)
+//    },err => {
+//        console.log(err)
+//    })  //可以成功返回数据
+
+
+
+
+
+
+
+
+//    axios#get("http://123.56.220.217:3031/list",{
+//        timeout: 900000,
+//    method:"get",
+//        // 返回数据类型
+//        responseType: 'json',
+//    transformResponse: [function (data) {
+//        // 这里提前处理返回的数据
+//        console.log(data)
+//        console.log('aaa')
+//        return data
+//    }]
+//})
+
+//axios#get("http://123.56.220.217:3031/list")()
+
+
+
+
+
+</script>
+</html>
