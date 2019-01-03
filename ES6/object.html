@@ -3,23 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>对象的扩展</title>
-    <style>
-        .div1{
-            width:100%;
-            height: 400px;
-            background: #b1b1b1;
-        }
-        .div2{
-            background: red;
-            width: 200px;
-            height: 200px;
-        }
-    </style>
 </head>
 <body>
-    <div class="div1">
-        <div class="div2">asdas</div>
-    </div>
 
 </body>
 <script type="application/ecmascript">
@@ -87,6 +72,150 @@
 //    console.log(foo)
 //    var ajax=new XMLHttpRequest()
 //    ajax.onreadystatechange
+
+
+//    var a='sss'
+//    console.log(Object.is(a,String))
+//    console.log(Object.is(a,'sss'))
+
+//    const target={a: 1}
+//    const a={b:3}
+//    const c={v:5}
+//    console.log(Object.assign(target,a,c))
+//    console.log(target)
+
+//const target={a: 1}
+//const a={b:3}
+//const c={b:5}
+//console.log(Object.assign(target,a,c))
+//console.log(target)
+
+//    const a={a:1}
+//    console.log(Object.assign(a))
+
+//const a="aaaaaa"
+//const b="Aaaaa"
+//console.log(Object.assign(a,b))
+
+//const a=['1','3','6']
+//const b=[1,2,3,4,5,'9']
+//console.log(Object.assign(a,b))
+
+//    const a='sss'
+//    console.log(Object.assign(a))
+//    for(var c in a){
+//        console.log(c)
+//        console.log(a[c])
+//    }
+
+
+//    console.log(Object.assign(null))
+//    console.log(Object.assign(undefined))
+
+//    const a='sss'
+//    const b=11111
+//    const c=[111,2,4,5]
+////    console.log(Object.assign({},c,b,a))
+//    console.log(Object.assign({},a,c,b))
+
+
+//    console.log(Object(1111))
+//    console.log(Object('sss'))
+//    console.log(Object(true))
+//    console.log(Object([1,2,3]))
+
+
+//    const oj1={a:3}
+//    const b={g:4}
+//    const target={}
+//    console.log(Object.assign(target,oj1,b))
+//    target.a=10
+//    console.log(oj1)
+//oj1.a=1111
+//    console.log(target)
+
+
+
+//    const obj1={a:{c:1}}
+//    const obj2={}
+//    console.log(Object.assign(obj2,obj1))
+//    obj1.a.c=1111
+//    console.log(obj2)
+
+//    const a={ass:3}
+//    const b={ass:10}
+//    const d={ass:111}
+//    console.log(Object.assign({},a,b,d))
+
+
+//    const o1=[1,2,3]
+//    const o2=[3,4,8]
+//    console.log(Object.assign({},o1,o2))
+
+//const source = {
+//    get foo() { return 1*28 }
+//};
+//const target = {};
+//console.log(Object.assign(target, source))
+
+//    function aaa (x,y) {
+//        return Object.assign({},x,y)
+//    }
+//
+//    const a={x:1}
+//    const b={y:1}
+//    console.log(aaa(a,b))
+
+
+//    var aa={
+//        a:1,
+//        aaa:function () {
+//            console.log(122)
+//        }
+//    }
+//    Object.assign(aa,{add:11,sss:function () {
+//        console.log(11111)
+//    }})
+//    console.log(aa)
+
+//    function clone(o1) {
+//        return Object.assign({},o1)
+//    }
+//    var o2={a:1}
+//    console.log(clone(o2))
+//    console.log(clone({d:10}))
+
+//    console.log(Object.assign({},{b:1},{a:10},{qw:111}))
+//    console.log((target,...sources)=>Object.assign(target,{b:1},{a:10},{qw:111}))
+//    const a={a:1}
+//    const target={}
+//    const ops={b:111}
+//    const ops2={a:111}
+//    console.log(Object.assign(target,a,ops,ops2))
+
+
+const source = {
+    aaa:1,
+    set foo(value) {
+        console.log(value);
+    }
+};
+
+const target1 = {};
+Object.assign(target1, source);
+
+console.log(Object.getOwnPropertyDescriptor(target1, 'aaa'))
+
+
+    const oj={
+        aaa:1,
+        get bar () {console.log(aaa)}
+    }
+    console.log(Object.getOwnPropertyDescriptor(oj,'aaa'))
+
+
+
+
 
 
 
