@@ -194,24 +194,124 @@
 //    console.log(Object.assign(target,a,ops,ops2))
 
 
-const source = {
-    aaa:1,
-    set foo(value) {
-        console.log(value);
-    }
-};
+//const source = {
+//    aaa:1,
+//    set foo(value) {
+//        console.log(value);
+//    }
+//};
+//
+//const target1 = {};
+//Object.assign(target1, source);
+//
+//console.log(Object.getOwnPropertyDescriptor(target1, 'aaa'))
+//
+//
+//    const oj={
+//        aaa:1,
+//        get bar () {console.log(aaa)}
+//    }
+//    console.log(Object.getOwnPropertyDescriptor(oj,'aaa'))
 
-const target1 = {};
-Object.assign(target1, source);
 
-console.log(Object.getOwnPropertyDescriptor(target1, 'aaa'))
+//    var pro={aaa:3333}
+//var x={
+//    s:1,
+//    x:3
+//}
+//pro.c=111
+//console.log(Object.setPrototypeOf(x,pro))
+//pro.xxx=1111
+//console.log(x.xxx)
+//console.log(x.c)
 
 
-    const oj={
-        aaa:1,
-        get bar () {console.log(aaa)}
-    }
-    console.log(Object.getOwnPropertyDescriptor(oj,'aaa'))
+//let proto = {};
+//let obj = { x: 10 };
+//Object.setPrototypeOf(obj, proto);
+//
+//proto.y = 20;
+//proto.z = 40;
+//console.log(obj.z)
+
+
+//    console.log(Object.setPrototypeOf(1,{sss:2}))
+//    console.log(Object.setPrototypeOf([2,3],{sss:2}))
+//    console.log(Object.setPrototypeOf('aa',{sss:2}))
+//    console.log(Object.setPrototypeOf(null,{sss:2}))
+//    console.log(Object.setPrototypeOf(undefined,{sss:2}))
+
+//    var pro={aa:1}
+////    var sss={a:1,e:2}
+////    console.log(Object.setPrototypeOf(sss,pro))
+//var a='sdeee'
+//    console.log(Object.setPrototypeOf(a,pro))
+//pro.aaaaaa=1
+//pro.as=2
+//pro.sehun=20
+////    console.log(Object.getPrototypeOf(sss))
+//    console.log(Object.getPrototypeOf(a))
+
+
+//    var aa={
+//        asd: "aaa",
+//        name: "aaa",
+//        aaa: "aaa",
+//        sda: "aaa"
+//    }
+//    console.log(Object.keys(aa))
+
+
+//    let {keys, values, entries} = Object;
+//    var aaa={
+//        11:"11",
+//        22:"22",
+//        1:"1",
+//        asd: "asd",
+//        nme: "nme",
+//        awf: "awf"
+//    }
+//    for (var k of keys(aaa)) {
+//        console.log(k)
+//    }
+//    for(var val of values(aaa)) {
+//        console.log(val)
+//    }
+//    for(var entr of entries(aaa)) {
+//        console.log(entr)
+//    }
+
+
+//    console.log(Object.keys(aaa))
+//    console.log(Object.values(aaa))
+//    console.log(Object.entries(aaa))
+
+//    var aaa=Object.create({},{p:{value:1}})
+//    console.log(aaa)
+//    console.log(Object.values(aaa))
+//var aaa=Object.create({},{p:{value:1,
+//    enumerable: true
+//        }})
+//console.log(aaa)
+//console.log(Object.values(aaa))
+
+//    console.log(Object.values({ [Symbol()]: 123, foo: 'abc' }))
+
+//    console.log(Object.keys("daaa"))
+//    console.log(Object.values("daaa"))
+//    console.log(Object.entries("daaa"))
+
+
+//    console.log(Object.entries({ foo: 'bar', baz: 42 }))
+//    console.log(Object.entries({ foo: 'bar', baz: 42,[Symbol()]: 123 }))
+
+//const obj = { foo: 'bar', baz: 42 };
+//const map = new Map(Object.entries(obj));
+//console.log(map)
+
+//    console.log(Object.fromEntries(new URLSearchParams('foo=bar&baz=qux')))
+
+
 
 
 
