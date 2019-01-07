@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>symbol</title>
+</head>
+<body>
+
+</body>
+<script type="application/ecmascript">
+//    let a=Symbol('faa')
+//    console.log(a)
+//    console.log(typeof a)
+//    console.log(a.toString())
+//    console.log(typeof a.toString())
+
+//    var aa={
+//        toString() {
+//            return 'aaa'
+//        }
+//    }
+//    const ass=Symbol(aa)
+//    console.log(ass)
+
+//    var s1=Symbol()
+//    var s2=Symbol()
+//    console.log(s1===s2)
+//
+//    var w1=Symbol('qq')
+//    var w2=Symbol('q1')
+//    console.log(w1===w2)
+
+//    var a=Symbol('ssss')
+//    console.log("aaa="+a)
+
+
+//    var a=Symbol('aaa')
+//    console.log(String(a))
+//    console.log(a)
+//    console.log(a.toString())
+
+//    var a=Symbol('true')
+////    console.log(a)
+////    console.log(a.toString())
+////    console.log(true===a)
+////    console.log(true===a.toString())
+////    console.log(Boolean(a))
+//    if(a){
+//        console.log('true')
+//    } else {
+//        console.log('false')
+//    }
+
+
+//    let mysymbol=Symbol()
+//    let aa={
+//        [mysymbol]: 'hello'
+//    }
+//    console.log(aa[mysymbol])
+//
+//    let a={}
+//    a[mysymbol]='sehun'
+//    console.log(a[mysymbol])
+//
+//    let aaa={}
+//    Object.defineProperty(aaa,mysymbol,{value: 'oh'})
+//    console.log(aaa[mysymbol])
+
+//    let mysymbol=Symbol()
+//    let a={
+//        [mysymbol]: 'sehun'
+//    }
+//    console.log(a[mysymbol])
+////    console.log(a.mysymbol)
+//    a[mysymbol]='hello'
+//    console.log(a[mysymbol])
+//    a.mysymbol='ssss'
+//    console.log(a[mysymbol])
+
+
+//    var a={
+//        aaa () {
+//            console.log('aaa')
+//        }
+//    }
+//    a.aaa()
+
+
+//    let sy=Symbol()
+//    var aaaa={
+//        [sy](){
+//            console.log('asdasd')
+//        }
+//    }
+//    aaaa[sy]()
+
+//    function aa(a) {
+//        switch (a) {
+//            case "aa":
+//                console.log('aa')
+//                break;
+//            case "bbb":
+//                console.log('bbb')
+//                break;
+//            default:
+//                console.log('sehun')
+//        }
+//    }
+//    aa('aa')
+//
+////    let asd={
+////        aa: 'aa',
+////        bbb: 'bbb',
+////    }
+//    function a(a) {
+//        switch (a) {
+//            case asd.aa:
+//                console.log('aa')
+//                break;
+//            case asd.bbb:
+//                console.log('bbb')
+//                break;
+//            default:
+//                console.log('sehun')
+//        }
+//    }
+//    let asd={
+//        sym: Symbol()
+//    }
+//    a('sym')
+
+
+//const shapeType = {
+//    triangle: Symbol()
+//};
+//
+//function getArea(shape, options) {
+//    let area = 0;
+//    switch (shape) {
+//        case shapeType.triangle:
+//            area = .5 * options.width * options.height;
+//            break;
+//    }
+//    return area;
+//}
+//
+//console.log(getArea(shapeType.triangle, { width: 100, height: 100 }));
+
+
+//    let a=Symbol('a')
+//    let b=Symbol('b')
+//    var aa={
+//        [a]: 'ssss',
+//        [b]: 'aaaa'
+//    }
+//    var aaaaaa=Object.getOwnPropertySymbols(aa)
+//    console.log(Object.getOwnPropertySymbols(aa))
+//    console.log(Object.getOwnPropertyNames(aa))
+//    for(var i in aaaaaa) {
+//        console.log(i)
+//        console.log(aaaaaa[i])
+//    }
+
+
+//    let a=Symbol('a')
+//    let b=Symbol('b')
+//    const aaa={
+//        [a]: 'sea',
+//        [b]: 'sehun',
+//        name: 'ohsehun',
+//        num: 1,
+//        bol: true
+//    }
+//    console.log(Reflect.ownKeys(aaa))
+
+
+//    let a=Symbol('a')
+//    let as={
+//        a:1,
+//        [a] () {
+//            console.log('aaa')
+//        }
+//    }
+//    as[a]()
+//    console.log(Object.getOwnPropertyNames(as))
+
+
+
+    var s1=Symbol('a')
+    var s2=Symbol('a')
+    console.log(s1===s2)
+
+    var s3=Symbol.for('a')
+    var s4=Symbol.for('a')
+    console.log(s3===s4)
+
+    console.log(Symbol.keyFor(s1))
+    console.log(Symbol.keyFor(s4))
+
+
+
+
+
+
+
+
+</script>
+</html>
