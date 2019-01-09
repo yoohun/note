@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 65px;
+    width: 100%;
+    background: #22282d;
+    display: flex;
+    justify-content: space-between;
+}
+header .headerlogo{
+    max-width: 130px;
+    margin: 20px 0 20px 40px;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .headerlogo img{
+    height: 100%;
+    line-height: 45px;
+}
+header .headernav ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+header .headernav ul li a{
+    display: inline-block;
+    margin: 0 30px;
+    line-height: 65px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+}
+header .headernav ul li a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background: orangered;
+    position: absolute;
+    bottom: 0;
+}
+header .headernav ul li a:hover::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background: orangered;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 4s;
+}
+header .headerItem .iconfont{
+    background: #ffffff;
+    font-size: 30px;
+}
+header .phone{
+    margin-right: 40px;
+}
+header .phone span{
+    line-height: 65px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.shiyong{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 150px;
+    background: #22282d;
+    display: flex;
+    justify-content: space-between;
+}
+.shiyong p{
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+
+}
+.sybtn{
+    display: inline-block;
+    height: 40px;
+    padding: 0 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 18px;
+    background: orangered;
+    border: 1px solid transparent;
+    text-align: center;
+    color: #ffffff;
+    transition: all .1s;
+}
+.sybtn:hover{
+    background: transparent;
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px 60px 50px ;
+    background:  #32383d;
+}
+.footerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.footerItem{
+    padding-right: 30px;
+    flex: 1;
+    font-size: 12px;
+    color: #96968c;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+.footerItem h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #bdbdb3;
+    margin: 20px 0;
+}
+.footerItem ul li{
+    display: block;
+}
+.copyRight{
+    text-align: center;
+    color: #96968c;
+    margin-top: 30px;
+}
