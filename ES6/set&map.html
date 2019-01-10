@@ -15,10 +15,202 @@
 //    }
 
 
-    const aa=new Set([1,2,3,2,2,2,1,4,2])
-    console.log(aa)
-    console.log([...aa])
-    console.log(aa.size)
+//    const aa=new Set([1,2,3,2,2,2,1,4,2])
+//    console.log(aa)
+//    console.log([...aa])
+//    console.log(aa.size)
+
+//    var a= new Set([1,2,3,3,2,1])
+//    console.log(a.add([5,4,1,2]))
+
+//    console.log(new Set('abcbsba'))
+//    console.log([...new Set('abcbsba')])
+//    console.log([...new Set('ababbc')].join(''))
+
+
+//    var set = new Set()
+//    set.add(5)
+//    set.add('5')
+//    console.log(set)
+//    set.add(NaN)
+//    set.add(NaN)
+//console.log(set)
+
+//    var set=new Set()
+//    set.add({})
+//    set.add({})
+//    console.log(set)
+//    console.log(set.constructor)
+//    console.log(set.size)
+
+
+//    var set = new Set([1,2,5,6,6,5,3,22,2,2222])
+//    console.log(set)
+//    console.log(set.add(10))
+//    console.log(set.delete(1))
+//    console.log(set.has('2'))
+//    console.log(set.has(2))
+//    console.log(set.clear())
+//    console.log(set)
+
+
+//    var set=new Set([2,3,1,2,4,6,1])
+//    console.log(Array.from(set))
+
+//    function noCf(ob) {
+//        return Array.from(new Set(ob))
+//    }
+//    console.log(noCf([1,2,2,2,4,1,1,2,4,2,3,19]))
+
+//    var s=new Set([1,2,2,4,12,19])
+//    for(let i of s.keys()) {
+//        console.log(i)
+//    }
+//    console.log('/')
+//    for(let i of s.values()) {
+//        console.log(i)
+//    }
+//    console.log('/')
+//    for(let i of s.entries()) {
+//        console.log(i)
+//    }
+
+//    console.log(Set.prototype[Symbol.iterator] === Set.prototype.values)
+
+//    var set=new Set([1,8,2,2,3,4])
+////    set.forEach((i,b,x)=>console.log(i*2+"+"+b+"+"+x))
+////    console.log([...set])
+////        [...set].map(x => x * 2)
+//    console.log(new Set([...set].map(x => x * 2)))
+//    console.log(new Set([...set].filter(x => x>4)))
+
+
+//    var set=new Set([1,2,3,1,0])
+//    var set2=new Set([1,2,5,3])
+//    console.log(new Set([...set,...set2]))
+//    console.log(new Set([...set],[...set2]))
+//    console.log(new Set([...set].filter(x=>set2.has(x))))
+//    console.log(new Set([...set].filter(x=>!set2.has(x))))
+//    console.log(new Set([...set2].filter(x=>!set.has(x))))
+
+
+//    var set=new Set([1,2,2,3,1])
+//    console.log(new Set([...set].map(x=>x)))
+//console.log(new Set([...set].map(val => val * 2)))
+//    console.log(new Set(Array.from(set,val=>val)))
+
+//    var weakset=new WeakSet([1])
+
+
+//    var weakset=new WeakSet()
+//    var a={w:1}
+//    var ob=[1,2,3,1,12]
+//    weakset.add(a)
+//    weakset.add(ob)
+//    console.log(weakset)
+//    console.log(weakset.delete(a))
+//    console.log(weakset)
+//    console.log(weakset.has(a))
+//    console.log(weakset.has(ob))
+
+
+//    var s=new Map()
+//    var o={p:1}
+//    s.set(o,'con')
+//    console.log(s)
+//    s.get(o)
+//    console.log(s)
+//    console.log(s.size)
+//    console.log(s.has(o))
+//    console.log(s.delete(o))
+//    console.log(s)
+//    console.log(s.clear())
+//    console.log(s)
+
+//    var a=new Map([[1,2],[23,34]])
+//    console.log(a)
+//    console.log(a.has(1))
+//    console.log(a.has(23))
+//    console.log(a.delete(1))
+//    console.log(a)
+//    console.log(a.set([123,32]))
+//    console.log(a)
+//    console.log(a.clear)
+//    console.log(a)
+
+
+//    var ve=new Set([[123,1],[123,123]])
+//    var fsd=new Map(ve)
+//    console.log(fsd)
+//    console.log(fsd.set(123,12211))
+//    console.log(fsd)
+//    console.log(fsd.get(1111))
+
+
+//    var map=new Map()
+//    map.set(['a'],111)
+//    map.set('a',10)
+//    map.set(1,'123123')
+//    map.set(true,'1231')
+//    map.set(NaN,'12')
+//    map.set(null,'qw12')
+////    map.set(undefined,'qw1=2')
+//    console.log(map)
+////    console.log(map.get(['a']))
+////    console.log(map.get('a'))
+////    console.log(map.get(1))
+////    console.log(map.get(true))
+////    console.log(map.get(NaN))
+////    console.log(map.get(null))
+////    console.log(map.get(undefined))
+//    console.log(map.delete(null))
+//    console.log(map)
+//    console.log(map.has(NaN))
+//    console.log(map)
+//    console.log(map.clear())
+//    console.log(map)
+
+
+//    var map=new Map()
+//    map.set(1,123)
+//    map.set('asd',1234)
+//    map.set('as','asda')
+//    console.log(map)
+//
+//    for(var i of map.keys()){
+//        console.log(i)
+//    }
+//    for(var i of map.values()){
+//        console.log(i)
+//    }
+//    for(var i of map.entries()){
+//        console.log(i)
+//    }
+//    map.forEach((a,b,c)=>console.log(i+b+c))
+
+
+//    var map=new Map()
+//    map.set(1,231)
+//    map.set('asd',23)
+//    console.log(map)
+//    console.log([...map])
+//    console.log([...map.keys()])
+//    console.log([...map.values()])
+//    console.log([...map.entries()])
+
+
+    var ma=new Map()
+    ma.set(1,123)
+    ma.set(2,34)
+    console.log(new Map(
+        [...ma].filter(([k, v]) =>v*2)
+))
+
+
+
+
+
+
 
 
 </script>
