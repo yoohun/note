@@ -67,6 +67,117 @@ header .phone span{
 
 
 
+.banner{
+    height: 500px;
+    background: url("../imgs/website1background.jpg");
+    background-size: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+.bannerItem h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #cacaca;
+    margin-bottom: 20px;
+}
+.bannerItem h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.bannerItem .freeSpan{
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    background: orangered;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.banner .bannerImg{
+    float: right;
+}
+
+
+.fuwu{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #cacaca;
+    display: flex;
+    justify-content: space-between;
+}
+.fuwu .fuwuItem{
+    width: 23%;
+    text-align: center;
+}
+.fuwuImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.fuwuItem span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.youshi{
+    width: 100%;
+    padding: 100px 10%;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+.youshi .youshiTitle{
+    text-align: center;
+    font-size: 30px;
+}
+.youshi p{
+    text-align: center;
+    font-size: 16px;
+    margin: 30px 0;
+}
+.youshiRow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.youshiRowItem{
+    width: 30%;
+    border: 1px solid rgba(255, 139, 23, 0.9);
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px 15px 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: orangered;
+    transition: all .2s;
+}
+.youshiRowItemImg{
+    margin-bottom: 20px;
+}
+.youshiRowItem p{
+    color: black;
+    font-size: 14px;
+    line-height: 24px;
+}
+.youshiRowItem:hover{
+    background: #ffffff;
+    border: 1px solid #f94300;
+}
+
+
+
+
 .shiyong{
     box-sizing: border-box;
     width: 100%;
