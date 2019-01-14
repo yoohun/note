@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>proxy</title>
+</head>
+<body>
+
+</body>
+<script type="application/ecmascript">
+//    var obj = new Proxy({}, {
+//        get: function (target, key, receiver) {
+//            console.log(`getting ${key}!`);
+//            return Reflect.get(target, key, receiver);
+//        },
+//        set: function (target, key, value, receiver) {
+//            console.log(`setting ${key}!`);
+//            return Reflect.set(target, key, value, receiver);
+//        }
+//    });
+//    obj.cout=1
+//    ++obj.cout
+
+//    var tar={}
+//    var a=new Proxy(tar,{
+//        get: function (target,property) {
+//            console.log(target)
+//            console.log(property)
+//            return 111
+//        },
+//        set: function (target, key, value, receiver) {
+//            console.log(target)
+//            console.log(value)
+//            console.log(key)
+//            console.log(receiver)
+//            return 111
+//        }
+//    })
+//
+//    a.b
+//    console.log(a.ds=1111111)
+//    console.log(tar.b)
+
+//var tar={}
+//var a=new Proxy(tar,{})
+//a.ds=1111111
+//console.log(tar.ds)
+//
+//var target = {};
+//var handler = {};
+//var proxy = new Proxy(target, handler);
+//proxy.a = 'b';
+//console.log(target.a)
+
+
+//    var proxy=new Proxy({},{
+//        get: function () {
+//            return 1111
+//        }
+//    })
+//
+//    var aaa=new Object(proxy)
+//    console.log(aaa.a)
+
+
+//    var target={}
+//    var handle={}
+//    var {proxy,revoke}=Proxy.revocable(target,handle)
+//    proxy.foo=1
+//    console.log(proxy.foo)
+//    revoke()
+//    console.log(proxy.foo)
+
+//    var ew={
+//        width:123,
+//        height:'asd'
+//    }
+//
+//    var proxy=new Proxy(ew,{
+//        set: function (target, propKey, value, receiver) {
+//            return 111
+//        },
+//        get: function (target, propKey) {
+//            if(propKey in target) {
+//                return target[propKey]
+//            } else {
+//                return '找不到'
+//            }
+//        }
+//    })
+//
+//    console.log(proxy.width)
+//    console.log(proxy.aa)
+//
+//    var b=Object.create(proxy)
+//    console.log(b.width)
+
+
+function createArray(...elements) {
+    let handler = {
+        get(target, propKey, receiver) {
+            console.log(propKey)
+            let index = Number(propKey);
+            if (index < 0) {
+                propKey = String(target.length + index);
+            }
+            return Reflect.get(target, propKey, receiver);
+        }
+    };
+
+    let target = [];
+    target.push(...elements);
+    return new Proxy(target, handler);
+}
+
+let arr = createArray('sdfsdfsda', 'afasfbfg', '3ce');
+console.log(arr[-2])
+
+
+
+
+
+
+
+
+</script>
+</html>

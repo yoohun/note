@@ -309,6 +309,23 @@
 //console.log(jsonToStrMap('{"yes": true, "no": false}'))
 
 
+//    var weakMap=new WeakMap()
+//    weakMap.set({w:1},1)
+//    weakMap.set(1,2)
+//    console.log(weakMap)
+//
+
+    var k1=[1,2,3]
+    var k2=[1,2,34]
+    var wM=new WeakMap([[k1,'qwe'],[k2,'asdf']])
+    var ss=[1,2]
+    wM.set(ss,14)
+    console.log(wM)
+    console.log(wM.get(k1))
+    console.log(wM.get(ss))
+
+
+
 
 
 

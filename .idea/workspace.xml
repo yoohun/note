@@ -14,33 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="website1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/例子/页面/website1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="81" column="41" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="41" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="website1.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/例子/页面/css/website1.css">
+      <file leaf-file-name="proxy.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ES6/proxy.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="406">
-              <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+              <caret line="115" column="38" lean-forward="true" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -60,6 +38,7 @@
     <findStrings>
       <find>postData</find>
       <find>youshiRowItemImg</find>
+      <find>whyContent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,8 +69,9 @@
         <option value="$PROJECT_DIR$/ES6/object.html" />
         <option value="$PROJECT_DIR$/ES6/symbol.html" />
         <option value="$PROJECT_DIR$/ES6/set&amp;map.html" />
-        <option value="$PROJECT_DIR$/例子/页面/website1.html" />
         <option value="$PROJECT_DIR$/例子/页面/css/website1.css" />
+        <option value="$PROJECT_DIR$/例子/页面/website1.html" />
+        <option value="$PROJECT_DIR$/ES6/proxy.html" />
       </list>
     </option>
   </component>
@@ -132,6 +112,11 @@
             <path>
               <item name="note" type="b2602c69:ProjectViewProjectNode" />
               <item name="note" type="462c0819:PsiDirectoryNode" />
+              <item name="ES6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
               <item name="例子" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -146,13 +131,6 @@
               <item name="例子" type="462c0819:PsiDirectoryNode" />
               <item name="页面" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="note" type="b2602c69:ProjectViewProjectNode" />
-              <item name="note" type="462c0819:PsiDirectoryNode" />
-              <item name="例子" type="462c0819:PsiDirectoryNode" />
-              <item name="页面" type="462c0819:PsiDirectoryNode" />
-              <item name="imgs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,16 +209,19 @@
       <workItem from="1546992891558" duration="12591000" />
       <workItem from="1547080458469" duration="15563000" />
       <workItem from="1547165649123" duration="16506000" />
+      <workItem from="1547266372707" duration="4176000" />
+      <workItem from="1547344219735" duration="4519000" />
+      <workItem from="1547433315052" duration="9809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202661000" />
+    <option name="totallyTimeSpent" value="221165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29166666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18526785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66775775" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -273,13 +254,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ES6/let.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="165" column="29" lean-forward="false" selection-start-line="165" selection-start-column="29" selection-end-line="165" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/jiegoufuzhi.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -470,19 +444,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/set&amp;map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="304" column="34" lean-forward="true" selection-start-line="304" selection-start-column="34" selection-end-line="304" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/symbol.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -546,10 +511,24 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/set&amp;map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="320" column="12" lean-forward="true" selection-start-line="320" selection-start-column="12" selection-end-line="320" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/例子/页面/css/website1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="205" column="35" lean-forward="true" selection-start-line="205" selection-start-column="35" selection-end-line="205" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/例子/页面/website1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="81" column="41" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="41" />
+        <state relative-caret-position="254">
+          <caret line="120" column="18" lean-forward="false" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -557,19 +536,20 @@
             <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/例子/页面/css/website1.css">
+    <entry file="file://$PROJECT_DIR$/ES6/proxy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
-          <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+          <caret line="115" column="38" lean-forward="true" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
           <folding />
         </state>
       </provider>

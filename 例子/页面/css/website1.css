@@ -175,8 +175,56 @@ header .phone span{
     border: 1px solid #f94300;
 }
 
-
-
+.why{
+    width: 100%;
+    padding: 100px 10%;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+.whtContentP{
+    margin: 20px 0;
+}
+.whyBtn{
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.whyBtn span{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    background: orangered;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.whyContent{
+    display: flex;
+    justify-content: space-between;
+}
+.whyContent .left{
+}
+.whyContent .left .hTitle{
+    font-size: 24px;
+    line-height: 120px;
+}
+.whyContent .left .hTitle span{
+    color: orangered;
+}
+.why .whyContent .whyContentBtn{
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    line-height: 40px;
+    font-size: 16px;
+    background: orangered;
+    color: white;
+}
 
 .shiyong{
     box-sizing: border-box;
